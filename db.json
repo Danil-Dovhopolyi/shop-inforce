@@ -1,0 +1,89 @@
+{
+  "cards": [
+    {
+      "id": 2,
+      "imageUrl": "some url here",
+      "name": "Product name2",
+      "count": 7,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": 3,
+      "imageUrl": "some url here",
+      "name": "Product name3",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "id": 4,
+      "imageUrl": "some url here",
+      "name": "Product name4",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "some url here",
+      "name": "Product name4",
+      "count": 8,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3,
+      "productId": 1,
+      "description": "some text here",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "productId": "2",
+      "description": "nice product",
+      "date": "6/24/2023, 3:11:37 PM",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": "some url here",
+      "name": "Product name4",
+      "count": 4,
+      "size": {
+        "width": 200,
+        "height": 200
+      },
+      "weight": "200g"
+    },
+    {
+      "productId": "2",
+      "description": "Nice Product",
+      "date": "6/24/2023, 4:57:11 PM",
+      "id": 6
+    },
+    {
+      "productId": "2",
+      "description": "good product",
+      "date": "6/24/2023, 5:04:47 PM",
+      "id": 7
+    }
+  ]
+}
