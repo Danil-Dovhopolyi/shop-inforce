@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+This application is a product management system that allows users to perform various operations on products. The following functions have been implemented:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+       Table: Displays a table with a list of products. Each row in the table represents a product and contains the product name, quantity, size, weight, delete button, edit button, and details button.
 
-## Available Scripts
+       Removal: Users can remove a product by clicking the "Remove" button in the appropriate row of the table. This will remove the product from your system.
 
-In the project directory, you can run:
+       Editing: Users can edit a product by clicking the "Edit" button in the corresponding row of the table. This opens a modal form where users can change product details such as name, quantity, size and weight. Changes made to the product are saved after the form is submitted.
 
-### `npm start`
+       Create: Users can add a new product by clicking the Add Product button above the table. This opens a modal form where users can enter new product details, including name, quantity, size and weight. After submitting the form, the new product is added to the system and displayed in the table.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+       View details with comments: Users can view product details, including product name, quantity, size, and weight. In addition, the product information section contains a list of comments related to the product. Each comment includes a description and date. Users can add new product comments by typing the comment in the provided text area and submitting it. (The functionality was also implemented using redax, but was not used due to lack of time and due to an unresolved error)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run the application locally, follow these steps:
+git clone <repository-url>
 
-### `npm test`
+Install the required dependencies.
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the JSON server to provide a mock API.
+json-server --watch db.json --port 3001
 
-### `npm run build`
+    npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Open your browser and visit http://localhost:3000 to access the product management system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Please ensure that you have Node.js and npm (Node Package Manager) installed on your machine before running the above commands.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note: The json-server command is used to run a local JSON server that serves the product and comment data from the db.json file. This is a mock API for demonstration purposes.
